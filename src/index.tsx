@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import { App } from './App';
 import { FluentCustomizations } from '@uifabric/fluent-theme';
 import { Customizer, mergeStyles } from 'office-ui-fabric-react';
+import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 import * as serviceWorker from './serviceWorker';
 
+initializeIcons()
 // Inject some global styles
 mergeStyles({
   selectors: {
